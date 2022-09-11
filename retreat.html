@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Empress Academy</title>
+	<link rel="stylesheet" href="css/libs/air-datepicker.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+	<script src="js/libs/jquery-3.6.0.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="Shortcut Icon" type="image/x-icon" href="img/general/favicon.svg" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,600&family=Inter:wght@100;200;300;400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/modules/readme/readme.min.css"><link rel="stylesheet" href="css/modules/example/example.min.css"> -->
+</head>
+
+<body>
+
+<header class="header">
+	<div class="header__container">
+		<div class="header__logo logo">
+			<a href="index.html" class="header__logo-link logo-link"><img src="img/logo.svg" alt="" class="header__logo-img logo-img"><div class="header__logo-text logo-text">Empress Academy</div></a>
+		</div>
+		<div class="header__menu">
+			<nav class="header__nav header-item">
+				<ul class="header__list">
+					<li class="header__list-item current-menu-item"><a href="index.html" class="header__list-link">Главная</a></li>
+					<li class="header__list-item"><a href="page-courses.html" class="header__list-link">Курсы</a></li>
+					<li class="header__list-item"><a href="#consult" class="header__list-link">Консультация</a></li>
+				</ul>
+			</nav>
+			<div class="header__search header-item">
+				<form action="#" class="header__search-form">
+					<input type="text" class="header__search-input" placeholder="Поиск" required>
+					<button class="header__search-btn"><img src="img/search.svg" alt="" class="header__search-img"></button>
+				</form>
+			</div>
+			<div class="header__user header-item">
+				<div class="header__basket">
+					<a href="basket.html" class="header__basket-link"><img src="img/basket.svg" alt="" class="header__basket-img"></a>
+				</div>
+				<div class="header__liked">
+					<a href="#" class="header__liked-link"><img src="img/liked.svg" alt="" class="header__liked-img"><span>2</span></a>
+				</div>
+			</div>
+			<div class="header__login header-item">
+				<a href="#" class="header__login-btn bttn-yellow-small">Войти</a>
+			</div>
+		</div>
+		<div class="header__burger header-item"><span></span></div>
+	</div>
+</header>
+
+<main class="main">
+
+<section class="intro intro__about" style="background-image: url(img/retreat/intro/bg.png);">
+    <div class="intro__container intro__about-container">
+        <div class="intro__content">
+            <h1 class="intro__title intro__about-title">Астрологический Ретрит</h1>
+            <div class="intro__post">Турция, Белек</div>
+        </div>
+    </div>
+</section>
+
+<section class="retreat section blur_section">
+    <div class="retreat__container">
+        <div class="retreat__sidebar">
+            <div class="retreat__sidebar-title">Запись на ретрит</div>
+            <div class="retreat__sidebar-item sidebar__item">
+                <div class="retreat__sidebar-img"><img src="img/retreat/sidebar.png" alt=""></div>
+                <ul class="retreat__sidebar-list">
+                    <li>
+                        <div class="retreat__sidebar-list-title">Даты</div>
+                        <div class="retreat__sidebar-list-item"><img src="img/icons/calendar.svg" alt=""> 22.10.22 - 29.10.22</div>
+                    </li>
+                    <li>
+                        <div class="retreat__sidebar-list-title">Место</div>
+                        <div class="retreat__sidebar-list-item"><img src="img/icons/location.svg" alt=""> Турция, Белек</div>
+                        <div class="retreat__sidebar-list-item"><img src="img/icons/building.svg" alt=""> Adam & Eve - Adult Only</div>
+                    </li>
+                    <li>
+                        <div class="retreat__sidebar-list-title">Стоимость</div>
+                        <div class="retreat__sidebar-list-item"><img src="img/icons/wallet.svg" alt=""> 3000<span>€</span></div>
+                    </li>
+                    <li>
+                        <div class="retreat__sidebar-list-title">Количество мест</div>
+                        <div class="retreat__sidebar-list-item"><img src="img/icons/users.svg" alt=""> 15</div>
+                    </li>
+                </ul>
+                <a href="basket.html" class="retreat__sidebar-btn bttn-yellow">Купить</a>
+            </div>
+        </div>
+        <div class="retreat__about">
+            <div class="retreat__about-title title">О ретрите</div>
+            <div class="retreat__about-descr">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius scelerisque sit amet, facilisi. Donec in senectus lorem euismod pellentesque. Tellus adipiscing pellentesque id fringilla quis parturient eu. Diam cursus ac tortor at nec.  </p>
+                <p>Vel orci, lacus, quis nec aliquam posuere elementum mauris sed. Purus amet egestas nibh diam sociis cras. Sagittis egestas diam gravida etiam sagittis. Nisi venenatis, elementum amet ornare enim, purus arcu. Aliquam eleifend libero nec diam.</p>
+            </div>
+            <div class="retreat__stats">
+                <div class="retreat__stats-item">
+                    <div class="retreat__stats-num">7</div>
+                    <div class="retreat__stats-text">Дней</div>
+                </div>
+                <div class="retreat__stats-item">
+                    <div class="retreat__stats-num">48</div>
+                    <div class="retreat__stats-text">часов общения</div>
+                </div>
+                <div class="retreat__stats-item">
+                    <div class="retreat__stats-num">48</div>
+                    <div class="retreat__stats-text">часов общения</div>
+                </div>
+            </div>
+            <div class="retreat__prog">
+                <div class="retreat__about-title title">Программа</div>
+                <div class="retreat__prog-item">
+                    <div class="retreat__prog-title">День 1</div>
+                    <ul class="retreat__prog-list">
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">06:00  -  06:30</div> <span class="sep">-</span>
+                                <div  class="retreat__prog-text">Подъем</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">06:30  -  08:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Телесные практики восстановления (зарядка, окунание), медитация на день / на очищение</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">08:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Завтрак</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-info">
+                                <div class="retreat__prog-info-title">Свободное время</div>
+                                <div class="retreat__prog-info-descr">
+                                    <p>Свободное время подразумевает как самостоятельный досуг, отдых, так и совместный на</p>
+                                    <p>усмотрение группы. Возможно в это время пообщаться тет-а-тет </p>
+                                    <p>со специалистом по индивидуальному запросу.</p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">17:30 - 18:30</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Общая консультация (психолог), медитация</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">19:30</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Ужин </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">21:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Игра / экскурсия / дискотека <div>На выбор</div></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="retreat__prog-item">
+                    <div class="retreat__prog-title">День 1</div>
+                    <ul class="retreat__prog-list">
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">06:00  -  06:30</div> <span class="sep">-</span>
+                                <div  class="retreat__prog-text">Подъем</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">06:30  -  08:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Телесные практики восстановления (зарядка, окунание), медитация на день / на очищение</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">08:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Завтрак</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-info">
+                                <div class="retreat__prog-info-title">Свободное время</div>
+                                <div class="retreat__prog-info-descr">
+                                    <p>Свободное время подразумевает как самостоятельный досуг, отдых, так и совместный на</p>
+                                    <p>усмотрение группы. Возможно в это время пообщаться тет-а-тет </p>
+                                    <p>со специалистом по индивидуальному запросу.</p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">17:30 - 18:30</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Общая консультация (психолог), медитация</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">19:30</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Ужин </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">21:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Игра / экскурсия / дискотека <div>На выбор</div></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="retreat__prog-item">
+                    <div class="retreat__prog-title">День 1</div>
+                    <ul class="retreat__prog-list">
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">06:00  -  06:30</div> <span class="sep">-</span>
+                                <div  class="retreat__prog-text">Подъем</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">06:30  -  08:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Телесные практики восстановления (зарядка, окунание), медитация на день / на очищение</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">08:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Завтрак</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-info">
+                                <div class="retreat__prog-info-title">Свободное время</div>
+                                <div class="retreat__prog-info-descr">
+                                    <p>Свободное время подразумевает как самостоятельный досуг, отдых, так и совместный на</p>
+                                    <p>усмотрение группы. Возможно в это время пообщаться тет-а-тет </p>
+                                    <p>со специалистом по индивидуальному запросу.</p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">17:30 - 18:30</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Общая консультация (психолог), медитация</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">19:30</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Ужин </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="retreat__prog-timetable">
+                                <div class="retreat__prog-time">21:00</div> <span class="sep">-</span>
+                                <div class="retreat__prog-text">Игра / экскурсия / дискотека <div>На выбор</div></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="hotel section blur_section">
+    <div class="hotel__container">
+        <div class="hotel__title title">О отеле Adam & Eve - Adult Only</div>
+        <div class="hotel__images">
+            <div class="hotel__img hotel__img-big"><img src="img/hotel/01.png" alt=""></div>
+            <div class="hotel__img hotel__img-normal"><img src="img/hotel/02.png" alt=""></div>
+            <div class="hotel__img hotel__img-normal"><img src="img/hotel/03.png" alt=""></div>
+        </div>
+        <ul class="hotel__addit">
+            <li><div class="hotel__addit-img"><img src="img/icons/pool.svg" alt=""></div>2 бассейна</li>
+            <li><div class="hotel__addit-img"><img src="img/icons/beach.svg" alt=""></div>Побережье</li>
+            <li><div class="hotel__addit-img"><img src="img/icons/wifi.svg" alt=""></div>Бесплатный Wi-Fi </li>
+            <li><div class="hotel__addit-img"><img src="img/icons/bar.svg" alt=""></div>Бар</li>
+            <li><div class="hotel__addit-img"><img src="img/icons/spa.svg" alt=""></div>Спа-центр </li>
+            <li><div class="hotel__addit-img"><img src="img/icons/parking.svg" alt=""></div>Бесплатная парковка</li>
+        </ul>
+        <div class="hotel__info">
+            <div class="hotel__info-text">
+                <p>Отель Adam & Eve рассчитан на взрослых посетителей и отличается ярким декором в футуристическом стиле. К услугам гостей номера и отдельные виллы на берегу Средиземного моря, бесплатный Wi-Fi, большой спа-центр и огромный открытый бассейн.</p>
+                <p>Во всех номерах есть окна от пола до потолка, зеркальные панели на стенах и современная белая мебель. В каждом доме есть балкон, откуда открывается вид на сад или море. В распоряжении гостей настенный широкоэкранный телевизор и ванная комната с гидромассажной ванной.</p>
+                <p>В 9 ресторанах отеля предлагается большой выбор блюд, включая кулинарные творения японской кухни и традиционные турецкие деликатесы. В одном из ресторанов гости получат незабываемые впечатления от трапезы в полной темноте.</p>
+            </div>
+            <div class="hotel__info-text">
+                <p>Спа-центр Eden включает в себя массажный кабинет, традиционный хаммам и солярий. Кроме того, гости смогут потренироваться в хорошо оборудованном тренажерном зале, поиграть в теннис, а также заняться дайвингом или виндсерфингом.</p>
+                <p>Отель для взрослых Adam & Eve расположен в 2 км от оживленного города Белек. Поездка на автомобиле в амфитеатр Аспендос, где проводятся разнообразные шоу и спектакли, займет 30 минут. Гости могут бесплатно пользоваться гостиничной парковкой.</p>
+                <p>Это место расположения особенно нравится парам – они оценили его на 8,4 для поездки вдвоем.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="contract">
+    <div class="popup__title">Договор Публичной Оферты</div>
+    <div class="popup__content">
+        <div class="popup__suptitle">Уважаемые посетители!</div>
+        <div class="popup__descr">Прочитайте внимательно текст данной Публичной оферты про оказание услуг  и, если Вы не согласны с любым из пунктов настоящей оферты, или Вы не поняли любой из пунктов настоящей оферты, предлагаем Вам отказаться от услуг.</div>
+        <div class="popup__info">
+            <div class="popup__info-block">
+                <div class="popup__info-title">1. Определения и термины </div>
+                <div class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio et massa leo tempus integer tincidunt. Vel elementum ultricies ultrices fringilla est. Elementum nunc, egestas risus a. Etiam proin ultricies faucibus enim. Turpis at libero in neque viverra quis nibh. At sagittis lorem id nisi, ultrices magna bibendum bibendum. Non quis volutpat sit id lacus. Ipsum, morbi purus cras pretium ultrices etiam amet est. Semper amet pulvinar gravida dolor faucibus pellentesque facilisis. Iaculis natoque elit risus malesuada pellentesque suspendisse integer duis enim. Proin sed at sapien, nullam commodo, commodo lobortis in. Enim, odio et consequat, sed dui.
+                    Hac amet nunc sed viverra quis phasellus eget. Viverra varius quis mauris quis aliquam nisl. Posuere morbi id aliquam arcu tristique vitae. Sed pretium dui, quam urna in cursus diam. Risus iaculis condimentum nulla ultrices. Maecenas erat sollicitudin morbi tortor eget quis. Ac ultrices aliquam eget tellus aliquam curabitur adipiscing. Lectus tincidunt at eu vulputate senectus at sed id malesuada. Praesent vitae id congue a, quis. Mus lectus leo eu dictum scelerisque arcu penatibus eu. Gravida tincidunt non augue elit adipiscing nec volutpat aliquet.</div>
+            </div>
+            <div class="popup__info-block">
+                <div class="popup__info-title">1. Определения и термины </div>
+                <div class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio et massa leo tempus integer tincidunt. Vel elementum ultricies ultrices fringilla est. Elementum nunc, egestas risus a. Etiam proin ultricies faucibus enim. Turpis at libero in neque viverra quis nibh. At sagittis lorem id nisi, ultrices magna bibendum bibendum. Non quis volutpat sit id lacus. Ipsum, morbi purus cras pretium ultrices etiam amet est. Semper amet pulvinar gravida dolor faucibus pellentesque facilisis. Iaculis natoque elit risus malesuada pellentesque suspendisse integer duis enim. Proin sed at sapien, nullam commodo, commodo lobortis in. Enim, odio et consequat, sed dui.
+                    Hac amet nunc sed viverra quis phasellus eget. Viverra varius quis mauris quis aliquam nisl. Posuere morbi id aliquam arcu tristique vitae. Sed pretium dui, quam urna in cursus diam. Risus iaculis condimentum nulla ultrices. Maecenas erat sollicitudin morbi tortor eget quis. Ac ultrices aliquam eget tellus aliquam curabitur adipiscing. Lectus tincidunt at eu vulputate senectus at sed id malesuada. Praesent vitae id congue a, quis. Mus lectus leo eu dictum scelerisque arcu penatibus eu. Gravida tincidunt non augue elit adipiscing nec volutpat aliquet.</div>
+            </div>
+        </div>
+    </div>
+
+
+        <button class="popup__close"></button>
+</div>
+
+
+<div class="popup video" id="popup-video">
+    <div class="popup__title">Видео</div>
+        <div class="popup__video">
+
+            
+
+        </div>
+
+        <button class="popup__close"></button>
+</div>
+
+
+<div class="popup-bg"></div>
+
+
+</main>
+
+<footer class="footer">
+	<div class="footer__container">
+        <div class="footer__header">
+            <div class="footer__logo ">
+                <a href="index.html" class="footer__logo-link logo-link"><img src="img/logo.svg" alt="" class="footer__logo-img logo-img"><div class="footer__logo-text logo-text">Empress Academy</div></a>
+            </div>
+            <div class="footer__social">
+                <div class="footer__social-text">Следите за нами:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/facebook.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/twitter.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/telegram.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/instagram.svg" alt="" class="footer__social-img"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__menu menu">
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a href="index.html" class="menu__list-link">Главная</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Моя история</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Категории услуг</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Специалисты академии</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Прогноз дня</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Запись на консультации</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Видео уроков</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Отзывы о школе</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__end">
+            <div class="footer__category">
+                <ul class="footer__category-list">
+                    <div class="footer__category-title">Курсы академии:</div>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Астрология</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Эзотерика</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Таро</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">регрессия</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">нумерология</a></li>
+                </ul>
+            </div>
+            <div class="footer__privacy">
+                © 2022 LabLife. Все права защищены.
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/libs/dynamicAdapt.js"></script>
+
+<script src="js/modules/functions.js"></script>
+
+<script src="js/libs/countDown.js"></script>
+
+<script>
+    $('.countdown').downCount({
+        date: '06/10/2023 12:00:00',
+        offset: +3
+    }, function () {
+        alert('WOOT WOOT, done!');
+    });
+</script>
+
+<script src="js/modules/base.js"></script>
+
+<script src="js/libs/jquery.mask.js"></script>
+
+<script src="js/libs/air-datepicker.js"></script>
+
+<script src="js/app.min.js"></script>
+    
+</body>
+
+</html>

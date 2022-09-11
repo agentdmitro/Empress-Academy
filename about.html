@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Empress Academy</title>
+	<link rel="stylesheet" href="css/libs/air-datepicker.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+	<script src="js/libs/jquery-3.6.0.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="Shortcut Icon" type="image/x-icon" href="img/general/favicon.svg" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,600&family=Inter:wght@100;200;300;400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/modules/readme/readme.min.css"><link rel="stylesheet" href="css/modules/example/example.min.css"> -->
+</head>
+
+<body>
+
+<header class="header">
+	<div class="header__container">
+		<div class="header__logo logo">
+			<a href="index.html" class="header__logo-link logo-link"><img src="img/logo.svg" alt="" class="header__logo-img logo-img"><div class="header__logo-text logo-text">Empress Academy</div></a>
+		</div>
+		<div class="header__menu">
+			<nav class="header__nav header-item">
+				<ul class="header__list">
+					<li class="header__list-item current-menu-item"><a href="index.html" class="header__list-link">Главная</a></li>
+					<li class="header__list-item"><a href="page-courses.html" class="header__list-link">Курсы</a></li>
+					<li class="header__list-item"><a href="#consult" class="header__list-link">Консультация</a></li>
+				</ul>
+			</nav>
+			<div class="header__search header-item">
+				<form action="#" class="header__search-form">
+					<input type="text" class="header__search-input" placeholder="Поиск" required>
+					<button class="header__search-btn"><img src="img/search.svg" alt="" class="header__search-img"></button>
+				</form>
+			</div>
+			<div class="header__user header-item">
+				<div class="header__basket">
+					<a href="basket.html" class="header__basket-link"><img src="img/basket.svg" alt="" class="header__basket-img"></a>
+				</div>
+				<div class="header__liked">
+					<a href="#" class="header__liked-link"><img src="img/liked.svg" alt="" class="header__liked-img"><span>2</span></a>
+				</div>
+			</div>
+			<div class="header__login header-item">
+				<a href="#" class="header__login-btn bttn-yellow-small">Войти</a>
+			</div>
+		</div>
+		<div class="header__burger header-item"><span></span></div>
+	</div>
+</header>
+
+<main class="main">
+
+<section class="intro intro__about" style="background-image: url(img/about/author.png);">
+    <div class="intro__container intro__about-container">
+        <div class="intro__content">
+            <h1 class="intro__title intro__about-title">Елизавета <br> Кружнова</h1>
+            <div class="intro__post">Астролог / Основатель школы</div>
+            <div class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt et, sed nibh ullamcorper cras ac quis leo. Pellentesque nulla velit faucibus faucibus pulvinar sagittis. Scelerisque aenean felis et consequat neque, est gravida.</div>
+            <ul class="intro__social">
+                <li class="intro__social-item"><a href="#" class="intro__social-link"><img src="img/icons/facebook.svg" alt="" class="intro__social-img"></a></li>
+                <li class="intro__social-item"><a href="#" class="intro__social-link"><img src="img/icons/telegram.svg" alt="" class="intro__social-img"></a></li>
+                <li class="intro__social-item"><a href="#" class="intro__social-link"><img src="img/icons/instagram.svg" alt="" class="intro__social-img"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="intro__img">
+        <img src="img/main/main-intro.png" alt="" class="intro__img-item">
+        <img src="img/main/main-intro-bg.png" alt="" class="intro__img-bg">
+    </div> -->
+</section>
+
+
+<section class="about section blur_section">
+    <div class="about__container">
+        <div class="about__sidebar">
+            <div class="about__sidebar-title">Запись на консультацию</div>
+
+            <div class="about__sidebar-box">
+                <div type="text" id="datepicker"></div>
+                <div class="about__open">
+                    <div class="about__open-title">Доступное время</div>
+                    <div class="about__open-wrap">
+                        <div class="about__open-item">11:00 - 12:00</div>
+                        <div class="about__open-item selected">13:30 - 14:30</div>
+                        <div class="about__open-item">13:30 - 14:30</div>
+                        <div class="about__open-item">16:30 - 17:30</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="about__content">
+            <div class="about__div">
+                    <div class="about__title title">О специалисте</div>
+                <div class="about__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius scelerisque sit amet, facilisi. Donec in senectus lorem euismod pellentesque. Tellus adipiscing pellentesque id fringilla quis parturient eu. Diam cursus ac tortor at nec.  <br> <br>
+                    Vel orci, lacus, quis nec aliquam posuere elementum mauris sed. Purus amet egestas nibh diam sociis cras. Sagittis egestas diam gravida etiam sagittis. Nisi venenatis, elementum amet ornare enim, purus arcu. Aliquam eleifend libero nec diam.
+                </div>
+                <div class="about__stats">
+                    <div class="about__stats-box">
+                        <div class="about__stats-num">182</div>
+                        <div class="about__stats-text">Учеников</div>
+                    </div>
+                    <div class="about__stats-box">
+                        <div class="about__stats-num">1462</div>
+                        <div class="about__stats-text">косультаций</div>
+                    </div>
+                    <div class="about__stats-box">
+                        <div class="about__stats-num">654</div>
+                        <div class="about__stats-text">Уроков</div>
+                    </div>
+                </div>
+                <div class="about__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius scelerisque sit amet, facilisi. Donec in senectus lorem euismod pellentesque. Tellus adipiscing pellentesque id fringilla quis parturient eu. Diam cursus ac tortor at nec. Nibh dui id amet, elit sed. Sit interdum in tellus turpis enim rutrum tincidunt. Pulvinar metus, pharetra nulla elementum proin lacus amet. Ultrices dolor iaculis magna tincidunt elementum.
+                </div>
+            </div>
+            <div class="about__div">
+                <div class="about__title title">Курсы специалиста</div>
+                <div class="about__courses courses__wrap">
+                    <div class="courses__box">
+
+                        <div class="courses__top courses-line">
+                            <div class="courses__type">Таро</div>
+                            <div class="courses__right">
+                                <div class="courses__date">06.10.22 - 22.12.22</div>
+                                <div class="courses__heart"><img src="img/courses/like.svg" alt="" class="courses__header-img"></div>
+                            </div>
+                        </div>
+        
+                        <div class="courses__header courses-line">
+                            <div class="courses__intop">ТОп</div>
+                            <div class="courses__price">1200 <span>€</span> - 6000 <span>€</span></div>
+                        </div>
+        
+                        <a href="about.html" class="courses__author courses-line">
+                            <div class="courses__author-img"><img src="img/courses/authors/elizaphet.png" alt="" class="courses__author-img-item"></div>
+                            <div class="courses__author-info">
+                                <div class="courses__author-title">Елизавета Кружнова</div>
+                                <div class="courses__author-post">Астролог / Основатель школы</div>
+                            </div>
+                        </a>
+        
+                            <a href="single.html" class="courses__content-container">
+        
+                                
+        
+                                    <div class="courses__img courses-line">
+                                        <img src="img/courses/items/1.png" alt="" class="courses__img-item">
+                                    </div>
+                                    <div class="courses__info courses-line">
+                                        <div class="courses__info-item">
+                                            <img src="img/courses/videos.svg" alt="" class="courses__info-img">
+                                            <p class="courses__info-text">40 занятий</p>
+                                        </div>
+                                        <div class="courses__info-item">
+                                            <img src="img/courses/time.svg" alt="" class="courses__info-img">
+                                            <p class="courses__info-text">1.5 - 2 часа</p>
+                                        </div>
+                                    </div>
+                                    <div class="courses__content courses-line">
+            
+                                        <div class="courses__content-info">
+                                            <div class="courses__content-title">Астрология 2.0: Теория и основы практики</div>
+                                            <div class="courses__content-suptitle">Что входит в данный курс:</div>
+                                            <div class="courses__content-excerpt">
+                                                Введение в систему Таро. Место Таро в ряду эзотерических дисциплин. Краткий обзор истории Таро. Колода ...
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+            
+                                    <div class="courses__btn courses-line ">
+                                        <button class="courses__btn-item bttn-black">Подробее о курсе</button>
+                                    </div>
+        
+                                    
+        
+                            </a>
+        
+                    </div>
+                    <div class="courses__box">
+
+                        <div class="courses__top courses-line">
+                            <div class="courses__type">Таро</div>
+                            <div class="courses__right">
+                                <div class="courses__date">06.10.22 - 22.12.22</div>
+                                <div class="courses__heart"><img src="img/courses/like.svg" alt="" class="courses__header-img"></div>
+                            </div>
+                        </div>
+        
+                        <div class="courses__header courses-line">
+                            <div class="courses__intop">ТОп</div>
+                            <div class="courses__price">1200 <span>€</span> - 6000 <span>€</span></div>
+                        </div>
+        
+                        <a href="about.html" class="courses__author courses-line">
+                            <div class="courses__author-img"><img src="img/courses/authors/elizaphet.png" alt="" class="courses__author-img-item"></div>
+                            <div class="courses__author-info">
+                                <div class="courses__author-title">Елизавета Кружнова</div>
+                                <div class="courses__author-post">Астролог / Основатель школы</div>
+                            </div>
+                        </a>
+        
+                            <a href="single.html" class="courses__content-container">
+        
+                                
+        
+                                    <div class="courses__img courses-line">
+                                        <img src="img/courses/items/1.png" alt="" class="courses__img-item">
+                                    </div>
+                                    <div class="courses__info courses-line">
+                                        <div class="courses__info-item">
+                                            <img src="img/courses/videos.svg" alt="" class="courses__info-img">
+                                            <p class="courses__info-text">40 занятий</p>
+                                        </div>
+                                        <div class="courses__info-item">
+                                            <img src="img/courses/time.svg" alt="" class="courses__info-img">
+                                            <p class="courses__info-text">1.5 - 2 часа</p>
+                                        </div>
+                                    </div>
+                                    <div class="courses__content courses-line">
+            
+                                        <div class="courses__content-info">
+                                            <div class="courses__content-title">Астрология 2.0: Теория и основы практики</div>
+                                            <div class="courses__content-suptitle">Что входит в данный курс:</div>
+                                            <div class="courses__content-excerpt">
+                                                Введение в систему Таро. Место Таро в ряду эзотерических дисциплин. Краткий обзор истории Таро. Колода ...
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+            
+                                    <div class="courses__btn courses-line ">
+                                        <button class="courses__btn-item bttn-black">Подробее о курсе</button>
+                                    </div>
+        
+                                    
+        
+                            </a>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="about__div">
+                <div class="about__title title">Консультации</div>
+                <div class="about__offer">
+                    <div class="about__offer-box offer__box">
+                        <a href="#">
+                            <div class="offer__box-header">
+                                <div class="offer__box-title">Ректификация времени рождения</div>
+                                <div class="offer__box-cost">
+                                    <div class="offer__box-price old"><p>3 800</p> <span>грн.</span></div>
+                                    <div class="offer__box-price new"><p>3 600</p> <span>грн.</span></div>
+                                </div>
+                            </div>
+                            <div class="offer__box-text">
+                                Процедура установления времени рождения с точностью до минут и секунд называется ректификация. Часто астрологи проводят ее перед тем как начать выстраивать натальную карту.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="about__offer-box offer__box">
+                        <a href="#">
+                            <div class="offer__box-header">
+                                <div class="offer__box-title">Ректификация времени рождения</div>
+                                <div class="offer__box-cost">
+                                    <div class="offer__box-price new"><p>10 600</p> <span>грн.</span></div>
+                                </div>
+                            </div>
+                            <div class="offer__box-text">
+                                Процедура установления времени рождения с точностью до минут и секунд называется ректификация. Часто астрологи проводят ее перед тем как начать выстраивать натальную карту.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="about__offer-box offer__box">
+                        <a href="#">
+                            <div class="offer__box-header">
+                                <div class="offer__box-title">Ректификация времени рождения</div>
+                                <div class="offer__box-cost">
+                                    <div class="offer__box-price old"><p>3 800</p> <span>грн.</span></div>
+                                    <div class="offer__box-price new"><p>3 600</p> <span>грн.</span></div>
+                                </div>
+                            </div>
+                            <div class="offer__box-text">
+                                Процедура установления времени рождения с точностью до минут и секунд называется ректификация. Часто астрологи проводят ее перед тем как начать выстраивать натальную карту.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="popup" id="contract">
+    <div class="popup__title">Договор Публичной Оферты</div>
+    <div class="popup__content">
+        <div class="popup__suptitle">Уважаемые посетители!</div>
+        <div class="popup__descr">Прочитайте внимательно текст данной Публичной оферты про оказание услуг  и, если Вы не согласны с любым из пунктов настоящей оферты, или Вы не поняли любой из пунктов настоящей оферты, предлагаем Вам отказаться от услуг.</div>
+        <div class="popup__info">
+            <div class="popup__info-block">
+                <div class="popup__info-title">1. Определения и термины </div>
+                <div class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio et massa leo tempus integer tincidunt. Vel elementum ultricies ultrices fringilla est. Elementum nunc, egestas risus a. Etiam proin ultricies faucibus enim. Turpis at libero in neque viverra quis nibh. At sagittis lorem id nisi, ultrices magna bibendum bibendum. Non quis volutpat sit id lacus. Ipsum, morbi purus cras pretium ultrices etiam amet est. Semper amet pulvinar gravida dolor faucibus pellentesque facilisis. Iaculis natoque elit risus malesuada pellentesque suspendisse integer duis enim. Proin sed at sapien, nullam commodo, commodo lobortis in. Enim, odio et consequat, sed dui.
+                    Hac amet nunc sed viverra quis phasellus eget. Viverra varius quis mauris quis aliquam nisl. Posuere morbi id aliquam arcu tristique vitae. Sed pretium dui, quam urna in cursus diam. Risus iaculis condimentum nulla ultrices. Maecenas erat sollicitudin morbi tortor eget quis. Ac ultrices aliquam eget tellus aliquam curabitur adipiscing. Lectus tincidunt at eu vulputate senectus at sed id malesuada. Praesent vitae id congue a, quis. Mus lectus leo eu dictum scelerisque arcu penatibus eu. Gravida tincidunt non augue elit adipiscing nec volutpat aliquet.</div>
+            </div>
+            <div class="popup__info-block">
+                <div class="popup__info-title">1. Определения и термины </div>
+                <div class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio et massa leo tempus integer tincidunt. Vel elementum ultricies ultrices fringilla est. Elementum nunc, egestas risus a. Etiam proin ultricies faucibus enim. Turpis at libero in neque viverra quis nibh. At sagittis lorem id nisi, ultrices magna bibendum bibendum. Non quis volutpat sit id lacus. Ipsum, morbi purus cras pretium ultrices etiam amet est. Semper amet pulvinar gravida dolor faucibus pellentesque facilisis. Iaculis natoque elit risus malesuada pellentesque suspendisse integer duis enim. Proin sed at sapien, nullam commodo, commodo lobortis in. Enim, odio et consequat, sed dui.
+                    Hac amet nunc sed viverra quis phasellus eget. Viverra varius quis mauris quis aliquam nisl. Posuere morbi id aliquam arcu tristique vitae. Sed pretium dui, quam urna in cursus diam. Risus iaculis condimentum nulla ultrices. Maecenas erat sollicitudin morbi tortor eget quis. Ac ultrices aliquam eget tellus aliquam curabitur adipiscing. Lectus tincidunt at eu vulputate senectus at sed id malesuada. Praesent vitae id congue a, quis. Mus lectus leo eu dictum scelerisque arcu penatibus eu. Gravida tincidunt non augue elit adipiscing nec volutpat aliquet.</div>
+            </div>
+        </div>
+    </div>
+
+
+        <button class="popup__close"></button>
+</div>
+
+
+<div class="popup video" id="popup-video">
+    <div class="popup__title">Видео</div>
+        <div class="popup__video">
+
+            
+
+        </div>
+
+        <button class="popup__close"></button>
+</div>
+
+
+<div class="popup-bg"></div>
+
+
+</main>
+
+<footer class="footer">
+	<div class="footer__container">
+        <div class="footer__header">
+            <div class="footer__logo ">
+                <a href="index.html" class="footer__logo-link logo-link"><img src="img/logo.svg" alt="" class="footer__logo-img logo-img"><div class="footer__logo-text logo-text">Empress Academy</div></a>
+            </div>
+            <div class="footer__social">
+                <div class="footer__social-text">Следите за нами:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/facebook.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/twitter.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/telegram.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/instagram.svg" alt="" class="footer__social-img"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__menu menu">
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a href="index.html" class="menu__list-link">Главная</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Моя история</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Категории услуг</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Специалисты академии</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Прогноз дня</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Запись на консультации</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Видео уроков</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Отзывы о школе</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__end">
+            <div class="footer__category">
+                <ul class="footer__category-list">
+                    <div class="footer__category-title">Курсы академии:</div>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Астрология</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Эзотерика</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Таро</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">регрессия</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">нумерология</a></li>
+                </ul>
+            </div>
+            <div class="footer__privacy">
+                © 2022 LabLife. Все права защищены.
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/libs/dynamicAdapt.js"></script>
+
+<script src="js/modules/functions.js"></script>
+
+<script src="js/libs/countDown.js"></script>
+
+<script>
+    $('.countdown').downCount({
+        date: '06/10/2023 12:00:00',
+        offset: +3
+    }, function () {
+        alert('WOOT WOOT, done!');
+    });
+</script>
+
+<script src="js/modules/base.js"></script>
+
+<script src="js/libs/jquery.mask.js"></script>
+
+<script src="js/libs/air-datepicker.js"></script>
+
+<script src="js/app.min.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Empress Academy</title>
+	<link rel="stylesheet" href="css/libs/air-datepicker.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+	<script src="js/libs/jquery-3.6.0.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="Shortcut Icon" type="image/x-icon" href="img/general/favicon.svg" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,600&family=Inter:wght@100;200;300;400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/modules/readme/readme.min.css"><link rel="stylesheet" href="css/modules/example/example.min.css"> -->
+</head>
+
+<body>
+
+<header class="header">
+	<div class="header__container">
+		<div class="header__logo logo">
+			<a href="index.html" class="header__logo-link logo-link"><img src="img/logo.svg" alt="" class="header__logo-img logo-img"><div class="header__logo-text logo-text">Empress Academy</div></a>
+		</div>
+		<div class="header__menu">
+			<nav class="header__nav header-item">
+				<ul class="header__list">
+					<li class="header__list-item current-menu-item"><a href="index.html" class="header__list-link">Главная</a></li>
+					<li class="header__list-item"><a href="page-courses.html" class="header__list-link">Курсы</a></li>
+					<li class="header__list-item"><a href="#consult" class="header__list-link">Консультация</a></li>
+				</ul>
+			</nav>
+			<div class="header__search header-item">
+				<form action="#" class="header__search-form">
+					<input type="text" class="header__search-input" placeholder="Поиск" required>
+					<button class="header__search-btn"><img src="img/search.svg" alt="" class="header__search-img"></button>
+				</form>
+			</div>
+			<div class="header__user header-item">
+				<div class="header__basket">
+					<a href="basket.html" class="header__basket-link"><img src="img/basket.svg" alt="" class="header__basket-img"></a>
+				</div>
+				<div class="header__liked">
+					<a href="#" class="header__liked-link"><img src="img/liked.svg" alt="" class="header__liked-img"><span>2</span></a>
+				</div>
+			</div>
+			<div class="header__login header-item">
+				<a href="#" class="header__login-btn bttn-yellow-small">Войти</a>
+			</div>
+		</div>
+		<div class="header__burger header-item"><span></span></div>
+	</div>
+</header>
+
+<main class="main">
+
+<section class="intro" style="background-image: url(img/single/intro/bg.png);">
+    <div class="intro__container">
+        <div class="intro__content">
+            <h3 class="intro__suptitle">Empress Academy</h3>
+            <h1 class="intro__title">Астрология 2.0: <br> Теория и основы <br> практики</h1>
+            <div class="intro__details details">
+                <div class="intro__details-time details__time">
+                    <div class="details__time-title">Набор на обучение: <span>астрология 2.0</span></div>
+                    <div class="details__time-wrap">
+                        <div class="details__time-box">
+                            <div class="details__time-item">146</div>
+                            <div class="details__time-text">дней</div>
+                        </div>
+                        <div class="details__time-box">
+                            <div class="details__time-item">16</div>
+                            <div class="details__time-text">часов</div>
+                        </div>
+                        <div class="details__time-box">
+                            <div class="details__time-item">32</div>
+                            <div class="details__time-text">минут</div>
+                        </div>
+                        <div class="details__time-box">
+                            <div class="details__time-item">18</div>
+                            <div class="details__time-text">секунд</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- <div class="intro__img">
+        <img src="img/main/main-intro.png" alt="" class="intro__img-item">
+        <img src="img/main/main-intro-bg.png" alt="" class="intro__img-bg">
+    </div> -->
+</section>
+
+<section class="purpose section blur_section">
+    <div class="purpose__container">
+        <div class="purpose__title title">Для кого этот курс</div>
+        <div class="purpose__wrap">
+            <div class="purpose__imgs" >
+                <div class="purpose__img-column">
+                    <div class="purpose__img purpose__img-normal"><img src="img/single/purpose/1.png" alt="" class="purpose__img"></div>
+                    <div class="purpose__img purpose__img-normal"><img src="img/single/purpose/2.png" alt="" class="purpose__img"></div>
+                </div>
+                <div class="purpose__img-column">
+                    <div class="purpose__img purpose__img-small"><img src="img/single/purpose/3.png" alt="" class="purpose__img"></div>
+                    <div class="purpose__img purpose__img-big"><img src="img/single/purpose/4.png" alt="" class="purpose__img"></div>
+                    <div class="purpose__img purpose__img-small"><img src="img/single/purpose/5.png" alt="" class="purpose__img"></div>
+
+                </div>
+                <div class="purpose__img-column">
+                    <div class="purpose__img purpose__img-normal"><img src="img/single/purpose/6.png" alt="" class="purpose__img"></div>
+                    <div class="purpose__img purpose__img-normal"><img src="img/single/purpose/7.png" alt="" class="purpose__img"></div>
+                </div>
+            </div>
+            <div class="purpose__info">
+                <div class="purpose__info-row">
+                    <div class="purpose__info-title">Вы не можете найти свое предназначение.</div>
+                    <div class="purpose__info-text">У вас ничего не получается, хотя вы прикладываете немало усилий. Вам интересно как сложится ваша судьба. Вы не знаете куда пойти учиться или работать. Где и при каких обстоятельствах вы можете встретить своего партнера по личной жизни?</div>
+                </div>
+                <div class="purpose__info-row">
+                    <div class="purpose__info-title">Вы не можете найти свое предназначение.</div>
+                    <div class="purpose__info-text">У вас ничего не получается, хотя вы прикладываете немало усилий. Вам интересно как сложится ваша судьба. Вы не знаете куда пойти учиться или работать. Где и при каких обстоятельствах вы можете встретить своего партнера по личной жизни?</div>
+                </div>
+                <div class="purpose__info-row">
+                    <div class="purpose__info-title">Вы не можете найти свое предназначение.</div>
+                    <div class="purpose__info-text">У вас ничего не получается, хотя вы прикладываете немало усилий. Вам интересно как сложится ваша судьба. Вы не знаете куда пойти учиться или работать. Где и при каких обстоятельствах вы можете встретить своего партнера по личной жизни?</div>
+                </div>
+                <div class="purpose__info-row">
+                    <div class="purpose__info-title">Вы не можете найти свое предназначение.</div>
+                    <div class="purpose__info-text">У вас ничего не получается, хотя вы прикладываете немало усилий. Вам интересно как сложится ваша судьба. Вы не знаете куда пойти учиться или работать. Где и при каких обстоятельствах вы можете встретить своего партнера по личной жизни?</div>
+                </div>
+                <div class="purpose__info-row">
+                    <div class="purpose__info-title">Вы не можете найти свое предназначение.</div>
+                    <div class="purpose__info-text">У вас ничего не получается, хотя вы прикладываете немало усилий. Вам интересно как сложится ваша судьба. Вы не знаете куда пойти учиться или работать. Где и при каких обстоятельствах вы можете встретить своего партнера по личной жизни?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lesson section" style="background-image: url(../img/single/lesson/bg.png);">
+    <div class="lesson__container">
+        <div class="lesson__title title">Как проходит <br> обучение</div>
+        <div class="lesson__img">
+            <img src="img/single/lesson/main.png" alt="" class="lesson__img-item">
+        </div>
+        <div class="lesson__wrap">
+            <div class="lesson__box">
+                <div class="lesson__box-img"><img src="img/single/lesson/icons/video.svg" alt="" class="lesson__box-img-item"></div>
+                <div class="lesson__box-info lesson__info">
+                    <div class="lesson__info-title">Занятия проходят в формате Zoom-конференций.</div>
+                    <div class="lesson__info-text">Просмотр видеозаписей лекций будет доступен в личном кабинете. Доступ к следующему уроку открывается после выполнения домашнего задания по предыдущему уроку.
+                    </div>
+                </div>
+            </div>
+            <div class="lesson__box">
+                <div class="lesson__box-img"><img src="img/single/lesson/icons/book.svg" alt="" class="lesson__box-img-item"></div>
+                <div class="lesson__box-info lesson__info">
+                    <div class="lesson__info-title">Домашние задания</div>
+                    <div class="lesson__info-text">Тестирование и практические домашние задания с проверкой и обратной связью.
+                    </div>
+                </div>
+            </div>
+            <div class="lesson__box">
+                <div class="lesson__box-img"><img src="img/single/lesson/icons/message.svg" alt="" class="lesson__box-img-item"></div>
+                <div class="lesson__box-info lesson__info">
+                    <div class="lesson__info-title">Общение с преподавателем</div>
+                    <div class="lesson__info-text">Каждый ученик будет иметь возможность пообщаться с преподавателем, а так же получить помощь и ответы на свои вопросы от координатора по учебному процессу.
+                    </div>
+                </div>
+            </div>
+            <div class="lesson__box">
+                <div class="lesson__box-img"><img src="img/single/lesson/icons/video.svg" alt="" class="lesson__box-img-item"></div>
+                <div class="lesson__box-info lesson__info">
+                    <div class="lesson__info-title">Сертификат</div>
+                    <div class="lesson__info-text">По окончанию курса вы получаете сертификат, подтверждающий, что вы успешно завершили обучающий курс, который включает в себя 90 академических часов. Выдача сертификата возможна в электронном и бумажном варианте.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lesson__stars"><img src="img/single/lesson/stars.png" alt="" class="lessons__stars-img"></div>
+    <div class="light__blur">
+        <img src="img/light_blur.png" alt="" class="light__blur-img">
+    </div>
+</section>
+
+<section class="end section">
+    <div class="end__container">
+        <div class="end__title title">По завершению курса вы:</div>
+        <div class="end__wrap">
+            <div class="end__box">
+                <div class="end__box-title">Предназначение</div>
+                <div class="end__box-text">Вы непременно узнаете свое предназначение</div>
+            </div>
+            <div class="end__box">
+                <div class="end__box-title">Смена деятельности</div>
+                <div class="end__box-text">Уволитесь с нелюбимой работы и начнете зарабатывать деньги с удовольствием.</div>
+            </div>
+            <div class="end__box">
+                <div class="end__box-title">Смена деятельности</div>
+                <div class="end__box-text">Уволитесь с нелюбимой работы и начнете зарабатывать деньги с удовольствием.</div>
+            </div>
+            <div class="end__box">
+                <div class="end__box-title">Предназначение</div>
+                <div class="end__box-text">Вы непременно узнаете свое предназначение</div>
+            </div>
+            <div class="end__box">
+                <div class="end__box-title">Предназначение</div>
+                <div class="end__box-text">Вы непременно узнаете свое предназначение</div>
+            </div>
+            <div class="end__box">
+                <div class="end__box-title">Предназначение</div>
+                <div class="end__box-text">Вы непременно узнаете свое предназначение</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="prog section blur_section">
+    <div class="prog__container">
+        <div class="prog__title title">Программа курса</div>
+        <div class="prog__wrap">
+            <div class="prog__wrap-column">
+                <div class="prog__box">
+                    <div class="prog__box-num">1 блок</div>
+                    <div class="prog__box-title">Основы западной астрологии.</div>
+                    <div class="prog__box-info">
+                        <ul class="prog__box-list">
+                            <li class="prog__box-list-item prog__box-text">Введение. Азы и основы западной астрологии.</li>
+                            <li class="prog__box-list-item prog__box-text">Знаки зодиака и их управители.</li>
+                            <li class="prog__box-list-item prog__box-text">Асцендент.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prog__box">
+                    <div class="prog__box-num">3 блок</div>
+                    <div class="prog__box-title">Аспекты и компенсаторика. Связь домов.</div>
+                    <div class="prog__box-info">
+                        <ul class="prog__box-list">
+                            <li class="prog__box-list-item prog__box-text">Аспекты — законы работы аспектов, правила чтения. Орбис.</li>
+                            <li class="prog__box-list-item prog__box-text">Как работает квадратура — принципы компенсаторики аспекта.</li>
+                            <li class="prog__box-list-item prog__box-text">Как работает оппозиция, секстиль, трин — принципы компенсаторики аспектов.</li>
+                            <li class="prog__box-list-item prog__box-text">Связь домов. Формула суицида, вдовства, болезни и прочие.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prog__box">
+                    <div class="prog__box-num">5 блок</div>
+                    <div class="prog__box-title">Анализ личной жизни.</div>
+                    <div class="prog__box-info">
+                        <div class="prog__box-text">
+                            В этом блоке разбираем каких партнёров вы притягиваете, какой типаж вам подходит, будет ли партер старше/младше по возрасту, иностранцем, человеком другого вероисповедания, где и при каких обстоятельствах вы будете знакомиться с партнёрами для серьёзных отношений и брака, возможен ли брак и какое количество, есть ли предрасположенность к разводу или безбрачию, как определить «гуляку» и однолюба (касается и женщин, и мужчин), как понять, что в отношениях могут быть измены, обманы, иллюзии, разберём какие могут быть проблемы в отношениях и в браке и что нужно делать, чтобы минимизировать риски. Дети: формула бесплодия, как определить к рождению какого количества детей у вас предрасположенность, какими они могут быть и ваши отношения с детьми, будут ли сложности во время зачатия, беременности, как пройдут роды, возможно ли взять ребёнка с детского дома и прибегнуть к ЭКО.
+                        </div>
+                    </div>
+                </div>
+                <div class="prog__box">
+                    <div class="prog__box-num">7 блок</div>
+                    <div class="prog__box-title">Анализ профессиональной жизни.</div>
+                    <div class="prog__box-info">
+                        <div class="prog__box-text">
+                            Подходит ли вам работа на себя, быть наемным сотрудником, возможно ли построить карьеру, сможете ли вы стать политиком, гос. служащим, есть ли формулы бизнеса. Какими талантами и способностями вы сможете зарабатывать, формулы профессий. Разберём, есть ли предрасположенность к лёгкому зарабатыванию денег, что они у вас будут всегда, фартит ли вам в этом вопросе, обращение с финансовым потоком. Разберём формулы богатства, бедности, безработицы.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prog__wrap-column">
+                <div class="prog__box">
+                    <div class="prog__box-num">4 блок</div>
+                    <div class="prog__box-title">Основы западной астрологии.</div>
+                    <div class="prog__box-info">
+                        <ul class="prog__box-list">
+                            <li class="prog__box-list-item prog__box-text">Дома. Управители домов.</li>
+                            <li class="prog__box-list-item prog__box-text">Стихии и кресты. Сила планет.</li>
+                            <li class="prog__box-list-item prog__box-text">Личные планеты: Солнце, Луна, Меркурий, Венера, Марс — принципы работы, главная задача планеты, положение в знаках и домах.</li>
+                            <li class="prog__box-list-item prog__box-text">Социальные планеты: Юпитер и Сатурн - — принципы работы, главная задача планеты, положение в знаках и домах.</li>
+                            <li class="prog__box-list-item prog__box-text">Высшие планеты: Уран, Нептун, Плутон — принципы работы, главная задача планеты, положение в знаках и домах.</li>
+                            <li class="prog__box-list-item prog__box-text">Ретроградность. Стеллиум. Сожжение планеты. Планета в шахте.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prog__box">
+                    <div class="prog__box-num">6 блок</div>
+                    <div class="prog__box-title">Аспекты и компенсаторика. Связь домов.</div>
+                    <div class="prog__box-info">
+                        <ul class="prog__box-list">
+                            <li class="prog__box-list-item prog__box-text">Аспекты — законы работы аспектов, правила чтения. Орбис.</li>
+                            <li class="prog__box-list-item prog__box-text">Как работает квадратура — принципы компенсаторики аспекта.</li>
+                            <li class="prog__box-list-item prog__box-text">Как работает оппозиция, секстиль, трин — принципы компенсаторики аспектов.</li>
+                            <li class="prog__box-list-item prog__box-text">Связь домов. Формула суицида, вдовства, болезни и прочие.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prog__box">
+                    <div class="prog__box-num">2 блок</div>
+                    <div class="prog__box-title">Анализ личной жизни.</div>
+                    <div class="prog__box-info">
+                        <div class="prog__box-text">
+                            В этом блоке разбираем каких партнёров вы притягиваете, какой типаж вам подходит, будет ли партер старше/младше по возрасту, иностранцем, человеком другого вероисповедания, где и при каких обстоятельствах вы будете знакомиться с партнёрами для серьёзных отношений и брака, возможен ли брак и какое количество, есть ли предрасположенность к разводу или безбрачию, как определить «гуляку» и однолюба (касается и женщин, и мужчин), как понять, что в отношениях могут быть измены, обманы, иллюзии, разберём какие могут быть проблемы в отношениях и в браке и что нужно делать, чтобы минимизировать риски. Дети: формула бесплодия, как определить к рождению какого количества детей у вас предрасположенность, какими они могут быть и ваши отношения с детьми, будут ли сложности во время зачатия, беременности, как пройдут роды, возможно ли взять ребёнка с детского дома и прибегнуть к ЭКО.
+                        </div>
+                    </div>
+                </div>
+                <div class="prog__box">
+                    <div class="prog__box-num">8 блок</div>
+                    <div class="prog__box-title">Анализ профессиональной жизни.</div>
+                    <div class="prog__box-info">
+                        <div class="prog__box-text">
+                            Подходит ли вам работа на себя, быть наемным сотрудником, возможно ли построить карьеру, сможете ли вы стать политиком, гос. служащим, есть ли формулы бизнеса. Какими талантами и способностями вы сможете зарабатывать, формулы профессий. Разберём, есть ли предрасположенность к лёгкому зарабатыванию денег, что они у вас будут всегда, фартит ли вам в этом вопросе, обращение с финансовым потоком. Разберём формулы богатства, бедности, безработицы.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tarif section blur_section">
+    <div class="tarif__container">
+        <div class="tarif__title title">Тарифы на обучение</div>
+
+        <div class="swiper tarif__slider">
+            <div class="swiper-wrapper tarif__wrap">
+                <div class="swiper-slide tarif__slide">
+                    <div class="tarif__box">
+                        <a href="#">
+                            <div class="tarif__header">
+                                <div class="tarif__header-title">Standart</div>
+                                <div class="tarif__header-price">1 200 <span>€</span></div>
+                                <div class="tarif__header-stats tarif__stats">
+                                    <div class="tarif__stats-box">
+                                        <div class="tarif__stats-img"><img src="img/icons/video.svg" alt="" class="tarif__stats-img-item"></div>
+                                        <div class="tarif__stats-text">40 занятий</div>
+                                    </div>
+                                    <div class="tarif__stats-box">
+                                        <div class="tarif__stats-img"><img src="img/icons/time.svg" alt="" class="tarif__stats-img-item"></div>
+                                        <div class="tarif__stats-text">1.5 - 2 часа</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="tarif__list">
+                                <li class="tarif__list-item"><p>Техническая поддержка</p></li>
+                                <li class="tarif__list-item"><p>Постоянный доступ к урокам</p></li>
+                                <li class="tarif__list-item"><p>Методические пособия к каждому блоку</p></li>
+                                <li class="tarif__list-item"><p>Электронный сертификат</p></li>
+                                <li class="tarif__list-item"><p>Участие в рейтинге студентов</p></li>
+                                <li class="tarif__list-item"><p>Тестирование знаний</p></li>
+                                <li class="tarif__list-item no"><p>Практические домашние задания</p></li>
+                                <li class="tarif__list-item no"><p>Обратная связь по каждому ДЗ</p></li>
+                                <li class="tarif__list-item no"><p>Проверка ДЗ преподавателем лично</p></li>
+                                <li class="tarif__list-item no"><p>Возможность зада дать вопросы преподавателю</p></li>
+                                <li class="tarif__list-item no"><p>Дополнительные созвоны с преподавателем</p></li>
+                            </ul>
+                            <div class="tarif__btn">
+                                <button class="tarif__btn-link bttn-black">Купить</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide tarif__slide">
+                    <div class="tarif__box">
+                <a href="#">
+                    <div class="tarif__header">
+                        <div class="tarif__header-title">Premium</div>
+                        <div class="tarif__header-price">1 800 <span>€</span></div>
+                        <div class="tarif__header-stats tarif__stats">
+                            <div class="tarif__stats-box">
+                                <div class="tarif__stats-img"><img src="img/icons/video.svg" alt="" class="tarif__stats-img-item"></div>
+                                <div class="tarif__stats-text">40 занятий</div>
+                            </div>
+                            <div class="tarif__stats-box">
+                                <div class="tarif__stats-img"><img src="img/icons/time.svg" alt="" class="tarif__stats-img-item"></div>
+                                <div class="tarif__stats-text">1.5 - 2 часа</div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="tarif__list">
+                        <li class="tarif__list-item"><p>Техническая поддержка</p></li>
+                        <li class="tarif__list-item"><p>Постоянный доступ к урокам</p></li>
+                        <li class="tarif__list-item"><p>Методические пособия к каждому блоку</p></li>
+                        <li class="tarif__list-item"><p>Электронный сертификат</p></li>
+                        <li class="tarif__list-item"><p>Участие в рейтинге студентов</p></li>
+                        <li class="tarif__list-item"><p>Тестирование знаний</p></li>
+                        <li class="tarif__list-item"><p>Практические домашние задания</p></li>
+                        <li class="tarif__list-item"><p>Обратная связь по каждому ДЗ</p></li>
+                        <li class="tarif__list-item no"><p>Проверка ДЗ преподавателем лично</p></li>
+                        <li class="tarif__list-item"><p>Возможность зада дать вопросы преподавателю</p></li>
+                        <li class="tarif__list-item no"><p>Дополнительные созвоны с преподавателем</p></li>
+                    </ul>
+                    <div class="tarif__btn">
+                        <button class="tarif__btn-link bttn-black">Купить</button>
+                    </div>
+                </a>
+                    </div>
+                </div>
+                <div class="swiper-slide tarif__slide">
+                    <div class="tarif__box">
+                <a href="#">
+                    <div class="tarif__header">
+                        <div class="tarif__header-title">Vip</div>
+                        <div class="tarif__header-price">6 000 <span>€</span></div>
+                        <div class="tarif__header-stats tarif__stats">
+                            <div class="tarif__stats-box">
+                                <div class="tarif__stats-img"><img src="img/icons/video.svg" alt="" class="tarif__stats-img-item"></div>
+                                <div class="tarif__stats-text">40 занятий</div>
+                            </div>
+                            <div class="tarif__stats-box">
+                                <div class="tarif__stats-img"><img src="img/icons/time.svg" alt="" class="tarif__stats-img-item"></div>
+                                <div class="tarif__stats-text">1.5 - 2 часа</div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="tarif__list">
+                        <li class="tarif__list-item"><p>Техническая поддержка</p></li>
+                        <li class="tarif__list-item"><p>Постоянный доступ к урокам</p></li>
+                        <li class="tarif__list-item"><p>Методические пособия к каждому блоку</p></li>
+                        <li class="tarif__list-item"><p>Электронный сертификат</p></li>
+                        <li class="tarif__list-item"><p>Участие в рейтинге студентов</p></li>
+                        <li class="tarif__list-item"><p>Тестирование знаний</p></li>
+                        <li class="tarif__list-item"><p>Практические домашние задания</p></li>
+                        <li class="tarif__list-item"><p>Обратная связь по каждому ДЗ</p></li>
+                        <li class="tarif__list-item"><p>Проверка ДЗ преподавателем лично</p></li>
+                        <li class="tarif__list-item"><p>Возможность зада дать вопросы преподавателю</p></li>
+                        <li class="tarif__list-item"><p>Дополнительные созвоны с преподавателем</p></li>
+                    </ul>
+                    <div class="tarif__btn">
+                        <button class="tarif__btn-link bttn-black">Купить</button>
+                    </div>
+                </a>
+            </div>
+                </div>
+            </div>
+            <div class="swiper-pagination tarif__pagination"></div>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="faq section">
+    <div class="faq__container">
+        <div class="faq__title title">FAQ:</div>
+        <div class="faq__wrap">
+            <div class="faq__box">
+                <div class="faq__box-title">Когда начало курса?</div>
+                <div class="faq__box-text">Да. Приобретая полный курс есть возможность ежемесячной оплаты. Возврат средств — не осуществляется.
+                    Для бронирования места на курсе вы вносите 20% от стоимости выбранного тарифа.</div>
+            </div>
+            <div class="faq__box">
+                <div class="faq__box-title active">Когда начало курса?</div>
+                <div class="faq__box-text" style="display: block;">Да. Приобретая полный курс есть возможность ежемесячной оплаты. Возврат средств — не осуществляется.
+                    Для бронирования места на курсе вы вносите 20% от стоимости выбранного тарифа.</div>
+            </div>
+            <div class="faq__box">
+                <div class="faq__box-title">Когда начало курса?</div>
+                <div class="faq__box-text">Да. Приобретая полный курс есть возможность ежемесячной оплаты. Возврат средств — не осуществляется.
+                    Для бронирования места на курсе вы вносите 20% от стоимости выбранного тарифа.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="rewiews section blur_section">
+    <div class="rewiews__container">
+        <div class="rewiews__title title">Отзывы о школе</div>
+
+        <div class="rewiews__wrap">
+
+            <div class="rewiews__box">
+                <div class="rewiews__box-header rewiews__header">
+                    <div class="rewiews__header-img"><img src="img/rewiews/icon.png" alt="" class="rewiews__header-img-item"></div>
+                    <div class="rewiews__header-info">
+                        <div class="rewiews__header-title">Ксения Смирнова</div>
+                        <div class="rewiews__header-post">Психотерапевт</div>
+                    </div>
+                </div>
+                <div class="rewiews__box-body rewiews__body">
+                    <div class="rewiews__body-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus aliquet scelerisque enim at. Diam lobortis eu viverra pa
+                    </div>
+                </div>
+                <a href="about.html">
+                    <div class="rewiews__box-footer rewiews__footer">
+                        <div class="rewiews__footer-course rewiews__course">
+                            <div class="rewiews__course-header">
+                                    <div class="rewiews__course-img"><img src="img/rewiews/icon2.png" alt="" class="rewiews__course-img-item"></div>
+                                <div class="rewiews__course-info">
+                                    <div class="rewiews__course-title">Елизавета Кружнова</div>
+                                    <div class="rewiews__course-post">Астролог / Основатель школы</div>
+                                </div>
+                            </div>
+                            <div class="rewiews__course-body">
+                                <div class="rewiews__course-stats rewiews__stats">
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/video.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">40 занятий</div>
+                                    </div>
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/time.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">1.5 - 2 часа</div>
+                                    </div>
+                                </div>
+                                <div class="rewiews__course-body-title">Астрология 1.0: Теория и основы практики</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="rewiews__box">
+                <div class="rewiews__box-header rewiews__header">
+                    <div class="rewiews__header-img"><img src="img/rewiews/icon.png" alt="" class="rewiews__header-img-item"></div>
+                    <div class="rewiews__header-info">
+                        <div class="rewiews__header-title">Ксения Смирнова</div>
+                        <div class="rewiews__header-post">Психотерапевт</div>
+                    </div>
+                </div>
+                <div class="rewiews__box-body rewiews__body">
+                    <div class="rewiews__body-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus aliquet scelerisque et amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus aliquet scelerisque et amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus aliquet scelerisque enim at. Diam lobortis eu viverra pa
+                    </div>
+                </div>
+                <a href="about.html">
+                    <div class="rewiews__box-footer rewiews__footer">
+                        <div class="rewiews__footer-course rewiews__course">
+                            <div class="rewiews__course-header">
+                                    <div class="rewiews__course-img"><img src="img/rewiews/icon2.png" alt="" class="rewiews__course-img-item"></div>
+                                <div class="rewiews__course-info">
+                                    <div class="rewiews__course-title">Елизавета Кружнова</div>
+                                    <div class="rewiews__course-post">Астролог / Основатель школы</div>
+                                </div>
+                            </div>
+                            <div class="rewiews__course-body">
+                                <div class="rewiews__course-stats rewiews__stats">
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/video.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">40 занятий</div>
+                                    </div>
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/time.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">1.5 - 2 часа</div>
+                                    </div>
+                                </div>
+                                <div class="rewiews__course-body-title">Астрология 1.0: Теория и основы практики</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="rewiews__box">
+                <div class="rewiews__box-header rewiews__header">
+                    <div class="rewiews__header-img"><img src="img/rewiews/icon.png" alt="" class="rewiews__header-img-item"></div>
+                    <div class="rewiews__header-info">
+                        <div class="rewiews__header-title">Ксения Смирнова</div>
+                        <div class="rewiews__header-post">Психотерапевт</div>
+                    </div>
+                </div>
+                <div class="rewiews__box-body rewiews__body">
+                    <div class="rewiews__body-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus alit amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus aliquet scelerisque equet scelerisque enim at. Diam lobortis eu viverra pa
+                    </div>
+                </div>
+                <a href="about.html">
+                    <div class="rewiews__box-footer rewiews__footer">
+                        <div class="rewiews__footer-course rewiews__course">
+                            <div class="rewiews__course-header">
+                                    <div class="rewiews__course-img"><img src="img/rewiews/icon2.png" alt="" class="rewiews__course-img-item"></div>
+                                <div class="rewiews__course-info">
+                                    <div class="rewiews__course-title">Елизавета Кружнова</div>
+                                    <div class="rewiews__course-post">Астролог / Основатель школы</div>
+                                </div>
+                            </div>
+                            <div class="rewiews__course-body">
+                                <div class="rewiews__course-stats rewiews__stats">
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/video.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">40 занятий</div>
+                                    </div>
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/time.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">1.5 - 2 часа</div>
+                                    </div>
+                                </div>
+                                <div class="rewiews__course-body-title">Астрология 1.0: Теория и основы практики</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="rewiews__box">
+                <div class="rewiews__box-header rewiews__header">
+                    <div class="rewiews__header-img"><img src="img/rewiews/icon.png" alt="" class="rewiews__header-img-item"></div>
+                    <div class="rewiews__header-info">
+                        <div class="rewiews__header-title">Ксения Смирнова</div>
+                        <div class="rewiews__header-post">Психотерапевт</div>
+                    </div>
+                </div>
+                <div class="rewiews__box-body rewiews__body">
+                    <div class="rewiews__body-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus aliquet scelerisque enim at. Diam lobortis eu viverra pa
+                    </div>
+                </div>
+                <a href="about.html">
+                    <div class="rewiews__box-footer rewiews__footer">
+                        <div class="rewiews__footer-course rewiews__course">
+                            <div class="rewiews__course-header">
+                                    <div class="rewiews__course-img"><img src="img/rewiews/icon2.png" alt="" class="rewiews__course-img-item"></div>
+                                <div class="rewiews__course-info">
+                                    <div class="rewiews__course-title">Елизавета Кружнова</div>
+                                    <div class="rewiews__course-post">Астролог / Основатель школы</div>
+                                </div>
+                            </div>
+                            <div class="rewiews__course-body">
+                                <div class="rewiews__course-stats rewiews__stats">
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/video.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">40 занятий</div>
+                                    </div>
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/time.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">1.5 - 2 часа</div>
+                                    </div>
+                                </div>
+                                <div class="rewiews__course-body-title">Астрология 1.0: Теория и основы практики</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="rewiews__box">
+                <div class="rewiews__box-header rewiews__header">
+                    <div class="rewiews__header-img"><img src="img/rewiews/icon.png" alt="" class="rewiews__header-img-item"></div>
+                    <div class="rewiews__header-info">
+                        <div class="rewiews__header-title">Ксения Смирнова</div>
+                        <div class="rewiews__header-post">Психотерапевт</div>
+                    </div>
+                </div>
+                <div class="rewiews__box-body rewiews__body">
+                    <div class="rewiews__body-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus aliquet scelerisque enim at. Diam lobortis eu viverra pa
+                    </div>
+                </div>
+                <a href="about.html">
+                    <div class="rewiews__box-footer rewiews__footer">
+                        <div class="rewiews__footer-course rewiews__course">
+                            <div class="rewiews__course-header">
+                                    <div class="rewiews__course-img"><img src="img/rewiews/icon2.png" alt="" class="rewiews__course-img-item"></div>
+                                <div class="rewiews__course-info">
+                                    <div class="rewiews__course-title">Елизавета Кружнова</div>
+                                    <div class="rewiews__course-post">Астролог / Основатель школы</div>
+                                </div>
+                            </div>
+                            <div class="rewiews__course-body">
+                                <div class="rewiews__course-stats rewiews__stats">
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/video.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">40 занятий</div>
+                                    </div>
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/time.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">1.5 - 2 часа</div>
+                                    </div>
+                                </div>
+                                <div class="rewiews__course-body-title">Астрология 1.0: Теория и основы практики</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="rewiews__box">
+                <div class="rewiews__box-header rewiews__header">
+                    <div class="rewiews__header-img"><img src="img/rewiews/icon.png" alt="" class="rewiews__header-img-item"></div>
+                    <div class="rewiews__header-info">
+                        <div class="rewiews__header-title">Ксения Смирнова</div>
+                        <div class="rewiews__header-post">Психотерапевт</div>
+                    </div>
+                </div>
+                <div class="rewiews__box-body rewiews__body">
+                    <div class="rewiews__body-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium, nunc, viverra eleifend faucibus etiam quis rhoncus placerat. Amet libero facilisis ut nunc donec a venenatis. Eu ligula gravida diam odio auctor imperdiet. Dignissim cras quis nullam id congue nisi. Pharetra tempor, odio diam blandit commodo. Aenean egestas velit ultricies tincidunt. 
+    Feugiat tristique scelerisque faucibus aliquet scelerisque enim at. Diam lobortis eu viverra pa
+                    </div>
+                </div>
+                <a href="about.html">
+                    <div class="rewiews__box-footer rewiews__footer">
+                        <div class="rewiews__footer-course rewiews__course">
+                            <div class="rewiews__course-header">
+                                    <div class="rewiews__course-img"><img src="img/rewiews/icon2.png" alt="" class="rewiews__course-img-item"></div>
+                                <div class="rewiews__course-info">
+                                    <div class="rewiews__course-title">Елизавета Кружнова</div>
+                                    <div class="rewiews__course-post">Астролог / Основатель школы</div>
+                                </div>
+                            </div>
+                            <div class="rewiews__course-body">
+                                <div class="rewiews__course-stats rewiews__stats">
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/video.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">40 занятий</div>
+                                    </div>
+                                    <div class="rewiews__stats-item">
+                                        <div class="rewiews__stats-img"><img src="img/rewiews/stats/time.svg" alt="" class="rewiews__stats-img-item"></div>
+                                        <div class="rewiews__stats-text">1.5 - 2 часа</div>
+                                    </div>
+                                </div>
+                                <div class="rewiews__course-body-title">Астрология 1.0: Теория и основы практики</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section> 
+
+<div class="popup" id="contract">
+    <div class="popup__title">Договор Публичной Оферты</div>
+    <div class="popup__content">
+        <div class="popup__suptitle">Уважаемые посетители!</div>
+        <div class="popup__descr">Прочитайте внимательно текст данной Публичной оферты про оказание услуг  и, если Вы не согласны с любым из пунктов настоящей оферты, или Вы не поняли любой из пунктов настоящей оферты, предлагаем Вам отказаться от услуг.</div>
+        <div class="popup__info">
+            <div class="popup__info-block">
+                <div class="popup__info-title">1. Определения и термины </div>
+                <div class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio et massa leo tempus integer tincidunt. Vel elementum ultricies ultrices fringilla est. Elementum nunc, egestas risus a. Etiam proin ultricies faucibus enim. Turpis at libero in neque viverra quis nibh. At sagittis lorem id nisi, ultrices magna bibendum bibendum. Non quis volutpat sit id lacus. Ipsum, morbi purus cras pretium ultrices etiam amet est. Semper amet pulvinar gravida dolor faucibus pellentesque facilisis. Iaculis natoque elit risus malesuada pellentesque suspendisse integer duis enim. Proin sed at sapien, nullam commodo, commodo lobortis in. Enim, odio et consequat, sed dui.
+                    Hac amet nunc sed viverra quis phasellus eget. Viverra varius quis mauris quis aliquam nisl. Posuere morbi id aliquam arcu tristique vitae. Sed pretium dui, quam urna in cursus diam. Risus iaculis condimentum nulla ultrices. Maecenas erat sollicitudin morbi tortor eget quis. Ac ultrices aliquam eget tellus aliquam curabitur adipiscing. Lectus tincidunt at eu vulputate senectus at sed id malesuada. Praesent vitae id congue a, quis. Mus lectus leo eu dictum scelerisque arcu penatibus eu. Gravida tincidunt non augue elit adipiscing nec volutpat aliquet.</div>
+            </div>
+            <div class="popup__info-block">
+                <div class="popup__info-title">1. Определения и термины </div>
+                <div class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio et massa leo tempus integer tincidunt. Vel elementum ultricies ultrices fringilla est. Elementum nunc, egestas risus a. Etiam proin ultricies faucibus enim. Turpis at libero in neque viverra quis nibh. At sagittis lorem id nisi, ultrices magna bibendum bibendum. Non quis volutpat sit id lacus. Ipsum, morbi purus cras pretium ultrices etiam amet est. Semper amet pulvinar gravida dolor faucibus pellentesque facilisis. Iaculis natoque elit risus malesuada pellentesque suspendisse integer duis enim. Proin sed at sapien, nullam commodo, commodo lobortis in. Enim, odio et consequat, sed dui.
+                    Hac amet nunc sed viverra quis phasellus eget. Viverra varius quis mauris quis aliquam nisl. Posuere morbi id aliquam arcu tristique vitae. Sed pretium dui, quam urna in cursus diam. Risus iaculis condimentum nulla ultrices. Maecenas erat sollicitudin morbi tortor eget quis. Ac ultrices aliquam eget tellus aliquam curabitur adipiscing. Lectus tincidunt at eu vulputate senectus at sed id malesuada. Praesent vitae id congue a, quis. Mus lectus leo eu dictum scelerisque arcu penatibus eu. Gravida tincidunt non augue elit adipiscing nec volutpat aliquet.</div>
+            </div>
+        </div>
+    </div>
+
+
+        <button class="popup__close"></button>
+</div>
+
+
+<div class="popup video" id="popup-video">
+    <div class="popup__title">Видео</div>
+        <div class="popup__video">
+
+            
+
+        </div>
+
+        <button class="popup__close"></button>
+</div>
+
+
+<div class="popup-bg"></div>
+
+
+</main>
+
+<footer class="footer">
+	<div class="footer__container">
+        <div class="footer__header">
+            <div class="footer__logo ">
+                <a href="index.html" class="footer__logo-link logo-link"><img src="img/logo.svg" alt="" class="footer__logo-img logo-img"><div class="footer__logo-text logo-text">Empress Academy</div></a>
+            </div>
+            <div class="footer__social">
+                <div class="footer__social-text">Следите за нами:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/facebook.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/twitter.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/telegram.svg" alt="" class="footer__social-img"></a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="img/icons/instagram.svg" alt="" class="footer__social-img"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__menu menu">
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a href="index.html" class="menu__list-link">Главная</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Моя история</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Категории услуг</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Специалисты академии</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Прогноз дня</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Запись на консультации</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Видео уроков</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Отзывы о школе</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__end">
+            <div class="footer__category">
+                <ul class="footer__category-list">
+                    <div class="footer__category-title">Курсы академии:</div>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Астрология</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Эзотерика</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">Таро</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">регрессия</a></li>
+                    <li class="footer__category-item"><a href="#" class="footer__category-link">нумерология</a></li>
+                </ul>
+            </div>
+            <div class="footer__privacy">
+                © 2022 LabLife. Все права защищены.
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/libs/dynamicAdapt.js"></script>
+
+<script src="js/modules/functions.js"></script>
+
+<script src="js/libs/countDown.js"></script>
+
+<script>
+    $('.countdown').downCount({
+        date: '06/10/2023 12:00:00',
+        offset: +3
+    }, function () {
+        alert('WOOT WOOT, done!');
+    });
+</script>
+
+<script src="js/modules/base.js"></script>
+
+<script src="js/libs/jquery.mask.js"></script>
+
+<script src="js/libs/air-datepicker.js"></script>
+
+<script src="js/app.min.js"></script>
+    
+</body>
+
+</html>

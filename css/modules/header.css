@@ -1,0 +1,51 @@
+.logo {
+  z-index: 200;
+  transition: 0.5s linear;
+}
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+.logo-text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.883983px;
+  max-width: 70px;
+  margin-left: 5px;
+}
+
+.header__menu-adativ {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1050px) {
+  body.menu-open .header__menu {
+    left: 0;
+  }
+  body.menu-open .header__burger span {
+    display: none;
+  }
+  body.menu-open .header__burger::before, body.menu-open .header__burger::after {
+    margin: 0;
+    -webkit-transition: top 0.15s linear, background 0.3s linear, -webkit-transform 0.15s linear 0.15s;
+    transition: top 0.15s linear, background 0.3s linear, -webkit-transform 0.15s linear 0.15s;
+    -o-transition: top 0.15s linear, transform 0.15s linear 0.15s, background 0.3s linear;
+    transition: top 0.15s linear, transform 0.15s linear 0.15s, background 0.3s linear;
+    transition: top 0.15s linear, transform 0.15s linear 0.15s, background 0.3s linear, -webkit-transform 0.15s linear 0.15s;
+  }
+  body.menu-open .header__burger:before {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  body.menu-open .header__burger:after {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
